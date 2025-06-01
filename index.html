@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <!--Google Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!--Google Fontes/fim-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta CEP</title>
+</head>
+
+<body>
+  <h1>World <br><span>Map</span></h1>
+  <form>
+    <div class="campos">
+      <label for="cep">CEP</label>
+      <input type="text" id="cep" placeholder="Ex.: 76984000" />
+      <div class="erro"></div>
+    </div>
+    <div class="campos">
+      <label for="logradouro">Logradouro</label>
+      <input type="text" id="logradouro" placeholder="Ex.: Rua do Mel" />
+    </div>
+    <div class="campos">
+      <label for="numero">Número</label>
+      <input type="text" id="numero" placeholder="Ex.: 7744" />
+    </div>
+    <div class="campos">
+      <label for="bairro">Bairro</label>
+      <input type="text" id="bairro" placeholder="Ex.: Jardim Aparecida" />
+    </div>
+    <div class="campos">
+      <label for="estado">Estado</label>
+      <select id="estado">
+        <option value="">Selecione um estado</option>
+      </select>
+    </div>
+    <div class="campos">
+      <label for="cidade">Cidade</label>
+      <select id="cidade" disabled>
+        <option value="">...</option>
+      </select>
+    </div>
+  </form>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

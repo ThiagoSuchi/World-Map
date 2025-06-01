@@ -1,0 +1,107 @@
+:root {
+    --vermelho: #d82d30;
+    --branco: white;
+    --cinza-claro: rgb(206, 206, 206);
+    --cinza: #6F6F6F;
+    --cinza-escuro: rgb(44, 44, 44);
+    --amarelo: rgb(211, 179, 0);
+}
+
+
+/*-----GERAL-----*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+body {
+    gap: 8rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/map.jpg');
+}
+
+
+/*---HERO---*/
+h1 {
+    font-family: "Inter";
+    font-size: 120pt;
+    color: var(--branco);
+}
+
+h1 span {
+    padding-left: 22rem;
+    color: var(--amarelo);
+}
+
+form {
+    gap: 2rem;
+    display: flex;
+    padding: 2rem 4rem;
+    flex-direction: column;
+    border: 2px solid #6F6F6F;
+
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background: rgba(77, 77, 77, 0.356);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.589);
+}
+
+.campos {
+    gap: 10px;
+    width: 25vw;
+    display: flex;
+    font-size: 17pt;
+    color: var(--cinza-claro);
+    flex-direction: column;
+}
+
+.campos input {
+    height: 3rem;
+    border: none;
+    border-radius: 3px;
+    padding-left: 1rem;
+    font-size: 14pt;
+    color: var(--cinza-escuro);
+}
+
+.campos input::placeholder {
+    font-size: 12pt;
+    color: var(--cinza);
+}
+
+.campos input:focus {
+    outline: none;
+    border: 3px solid var(--amarelo);
+}
+
+select {
+    height: 2rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 14pt;
+    color: var(--cinza-escuro);
+    padding-left: 10px;
+}
+
+select:focus {
+    outline: none;
+    border: 3px solid var(--amarelo);
+}
+
+/*---Menssagem de erro---*/
+.erro {
+    display: none;
+    color: var(--vermelho);
+    font-size: 12pt;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
