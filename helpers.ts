@@ -1,4 +1,4 @@
-import type { Cep } from "../interface/CepType";
+import type { Cep } from './CepType'
 
 const logradouro = document.getElementById('logradouro') as HTMLInputElement;
 const bairro = document.getElementById('bairro') as HTMLInputElement;

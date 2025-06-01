@@ -1,10 +1,10 @@
-import './assets/css/style.css'
+import './style.css'
 
-import type { Estado } from './interface/Estado';
-import type { Cep } from './interface/CepType';
-import { cidadeEstadoOrdenado, criarOptionElement, limparForm, optionUndefined } from './utils/helpers';
-import { consultarCep } from './service/cepService';
-import { validaCep } from './utils/validator/validCep';
+import type { Estado } from './Estado'
+import type { Cep } from './CepType'
+import { cidadeEstadoOrdenado, criarOptionElement, limparForm, optionUndefined } from './helpers'
+import { consultarCep } from './cepService'
+import { validaCep } from './validCep'
 
 const cep = document.getElementById('cep') as HTMLInputElement;
 const cidadeSelect = document.getElementById('cidade') as HTMLSelectElement;
